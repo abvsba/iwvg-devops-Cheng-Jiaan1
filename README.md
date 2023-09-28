@@ -5,3 +5,4 @@
 
 ### Estado del código
 [![CI](https://github.com/abvsba/iwvg-devops-cheng-jiaan1/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/abvsba/iwvg-devops-cheng-jiaan1/actions/workflows/ci.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=abvsba_iwvg-devops-cheng-jiaan1&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=abvsba_iwvg-devops-cheng-jiaan1)
