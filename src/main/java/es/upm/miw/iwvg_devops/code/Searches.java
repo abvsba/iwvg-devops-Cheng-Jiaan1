@@ -24,6 +24,7 @@ public class Searches {
                 .filter(user -> user.getFractions().stream()
                         .allMatch(Fraction::isProper))
                 .map(User::getId);
+
     }
 
     Stream<String> findUserFamilyNameByAllNegativeSignFractionDistinct() {
