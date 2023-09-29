@@ -26,6 +26,12 @@ public class Searches {
                 .map(User::getId);
     }
 
+    Stream<String> findUserFamilyNameByAllNegativeSignFractionDistinct() {
+        return new UsersDatabase().findAll()
+                .filter(user -> user.getFractions().stream()
+                        .allMatch(fraction -> fraction.decimal() < 0))
+                .map(User::getFamilyName).distinct();
+    }
 
 
 }
