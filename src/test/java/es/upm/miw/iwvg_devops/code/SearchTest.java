@@ -27,4 +27,10 @@ class SearchTest {
                 .collect(Collectors.toList()));
     }
 
+    @Test
+    void testFindUserFamilyNameByAllNegativeSignFractionDistinct() {
+        assertEquals(List.of(), new Searches().findUserFamilyNameByAllNegativeSignFractionDistinct()
+                .collect(Collectors.toList()));
+    }
+
 }
