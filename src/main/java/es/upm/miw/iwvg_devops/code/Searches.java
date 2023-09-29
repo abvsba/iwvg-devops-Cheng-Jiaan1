@@ -12,4 +12,11 @@ public class Searches {
                 .map(Fraction::decimal);
     }
 
+    Stream<Double> findDecimalFractionByNegativeSignFraction() {
+        return new UsersDatabase().findAll()
+                .flatMap(user -> user.getFractions().stream()
+                        .map(Fraction::decimal)
+                        .filter(decimal -> decimal < 0));
+    }
+
 }
